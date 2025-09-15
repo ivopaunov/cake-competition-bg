@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake Eating Competition — Sofia 2025</title>
+  <style>
+    :root{
+      --pink:#ff7ca8;
+      --pink-dark:#e85d90;
+      --cream:#fff8f2;
+      --accent:#fcd5ce;
+      --ink:#333;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--ink);
+      background:var(--cream);
+      line-height:1.5;
+      text-align:center;
+    }
+    header{
+      background:linear-gradient(135deg,var(--pink),#ffa8c4);
+      color:#fff;
+      padding:32px 16px;
+    }
+    header h1{margin:0;font-size:2rem}
+    .wrap{max-width:1000px;margin:0 auto;padding:24px 16px}
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:20px;
+    }
+    @media (min-width: 900px){
+      .grid{grid-template-columns:1.1fr 0.9fr;align-items:start}
+    }
+    .card{
+      background:#fff;
+      border-radius:12px;
+      padding:20px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.08);
+      text-align:left;
+    }
+    h2{margin:0 0 12px;font-size:1.25rem}
+    .kv{
+      overflow:hidden;
+      border-radius:12px;
+      background:#0001;
+    }
+    .kv img{
+      display:block;
+      width:100%;
+      height:auto;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+    }
+    .facts{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin:12px 0 0;
+    }
+    .badge{
+      background:var(--accent);
+      border-radius:999px;
+      padding:8px 12px;
+      font-weight:600;
+    }
+    .btn{
+      display:inline-block;
+      margin-top:16px;
+      padding:12px 18px;
+      background:var(--pink);
+      color:#fff;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:700;
+    }
+    .btn:hover{background:var(--pink-dark)}
+    footer{
+      margin-top:32px;
+      padding:16px;
+      background:var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍰 Cake Eating Competition — Sofia</h1>
+    <p>Ready for the sweetest sprint of the year?</p>
+  </header>
+
+  <main class="wrap">
+    <section class="grid">
+      <div class="card">
+        <h2>Event details</h2>
+        <p><strong>Location:</strong> Sofia, Bulgaria</p>
+        <p><strong>Date:</strong> 07 November 2025</p>
+        <p><strong>Time:</strong> 3:00 PM</p>
+        <div class="facts">
+          <span class="badge">5-minute showdown</span>
+          <span class="badge">Golden Fork Trophy</span>
+          <span class="badge">Cake vouchers for a year</span>
+        </div>
+        <a class="btn" href="#">Register Now</a>
+      </div>
+
+      <div class="card kv">
+        <!-- Replace src with the correct path/filename if different -->
+        <img src="IMG_9882.jpg" alt="Participant enjoying dessert at the gym">
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:20px">
+      <h2>How it works</h2>
+      <ul>
+        <li>Contestants race to eat the most cake within 5 minutes.</li>
+        <li>No hands inside the plate; utensils allowed.</li>
+        <li>Ties decided by a 60‑second bite‑off.</li>
+        <li>Judges verify clean plates and safe swallowing.</li>
+      </ul>
+      <a class="btn" href="#">Volunteer / Sponsor</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Cake Fest — Sweet moments, sweeter victories!</p>
+  </footer>
+</body>
+</html>
